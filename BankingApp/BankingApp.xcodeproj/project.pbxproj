@@ -13,6 +13,7 @@
 		047589B3270F760C0010CD70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047589B2270F760C0010CD70 /* Preview Assets.xcassets */; };
 		047589BD270F76740010CD70 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589BC270F76740010CD70 /* Transaction.swift */; };
 		047589BF270F76810010CD70 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589BE270F76810010CD70 /* Account.swift */; };
+		047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589C0270F7BEB0010CD70 /* PersistenceHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		047589B2270F760C0010CD70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		047589BC270F76740010CD70 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		047589BE270F76810010CD70 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		047589C0270F7BEB0010CD70 /* PersistenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		047589BA270F761F0010CD70 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				047589C0270F7BEB0010CD70 /* PersistenceHandler.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				047589AE270F760B0010CD70 /* ContentView.swift in Sources */,
 				047589BF270F76810010CD70 /* Account.swift in Sources */,
+				047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */,
 				047589AC270F760B0010CD70 /* BankingAppApp.swift in Sources */,
 				047589BD270F76740010CD70 /* Transaction.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 import Foundation
 import Metal
 
-struct Account {
+struct Account: Identifiable, Codable {
     //Types
     enum AccountType: String, Codable, CaseIterable {
         case checking
