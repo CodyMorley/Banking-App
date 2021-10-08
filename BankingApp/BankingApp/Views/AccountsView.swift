@@ -19,7 +19,7 @@ struct AccountsView: View {
         }
         .sheet(isPresented: $addingAccount) {
             NavigationView {
-                NewAccountView()
+                NewAccountView(name: "", type: .savings)
             }
             .environmentObject(stateHandler)
         }

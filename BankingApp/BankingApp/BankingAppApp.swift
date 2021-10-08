@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BankingAppApp: App {
+    let stateHandler = StateHandler()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountsView()
+                .environmentObject(stateHandler)
         }
     }
 }

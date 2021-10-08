@@ -27,6 +27,9 @@
 		047589F3270FF3B40010CD70 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F2270FF3B40010CD70 /* TransactionRow.swift */; };
 		047589F5270FF76F0010CD70 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F4270FF76F0010CD70 /* Date+Formatting.swift */; };
 		047589F7270FF79C0010CD70 /* Int+CurrencyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F6270FF79C0010CD70 /* Int+CurrencyFormatting.swift */; };
+		047589FB2710FC200010CD70 /* NewAccountContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589FA2710FC200010CD70 /* NewAccountContent.swift */; };
+		047589FD2710FC3F0010CD70 /* NewTransactionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589FC2710FC3F0010CD70 /* NewTransactionContent.swift */; };
+		047589FF2710FC890010CD70 /* TransactionAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589FE2710FC890010CD70 /* TransactionAmount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		047589F2270FF3B40010CD70 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		047589F4270FF76F0010CD70 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
 		047589F6270FF79C0010CD70 /* Int+CurrencyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CurrencyFormatting.swift"; sourceTree = "<group>"; };
+		047589FA2710FC200010CD70 /* NewAccountContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountContent.swift; sourceTree = "<group>"; };
+		047589FC2710FC3F0010CD70 /* NewTransactionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionContent.swift; sourceTree = "<group>"; };
+		047589FE2710FC890010CD70 /* TransactionAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAmount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 		047589F8270FFAA70010CD70 /* New Accounts Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				047589FA2710FC200010CD70 /* NewAccountContent.swift */,
 			);
 			path = "New Accounts Subviews";
 			sourceTree = "<group>";
@@ -191,6 +198,8 @@
 		047589F9270FFAC00010CD70 /* New Transaction Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				047589FC2710FC3F0010CD70 /* NewTransactionContent.swift */,
+				047589FE2710FC890010CD70 /* TransactionAmount.swift */,
 			);
 			path = "New Transaction Subviews";
 			sourceTree = "<group>";
@@ -267,16 +276,19 @@
 			files = (
 				047589E6270FF21E0010CD70 /* NewAccountView.swift in Sources */,
 				047589BF270F76810010CD70 /* Account.swift in Sources */,
+				047589FB2710FC200010CD70 /* NewAccountContent.swift in Sources */,
 				047589C8270F80160010CD70 /* String+IBAN.swift in Sources */,
 				047589ED270FF3640010CD70 /* AccountsViewContent.swift in Sources */,
 				047589CC270F846D0010CD70 /* UITestData.swift in Sources */,
 				047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */,
 				047589EF270FF37B0010CD70 /* AccountRow.swift in Sources */,
 				047589DB270F8BE50010CD70 /* AddItemButton.swift in Sources */,
+				047589FF2710FC890010CD70 /* TransactionAmount.swift in Sources */,
 				047589E8270FF2340010CD70 /* NewTransactionView.swift in Sources */,
 				047589E4270FF1F20010CD70 /* TransactionsView.swift in Sources */,
 				047589E1270FF1AA0010CD70 /* AccountsView.swift in Sources */,
 				047589CA270F81800010CD70 /* StateHandler.swift in Sources */,
+				047589FD2710FC3F0010CD70 /* NewTransactionContent.swift in Sources */,
 				047589AC270F760B0010CD70 /* BankingAppApp.swift in Sources */,
 				047589F7270FF79C0010CD70 /* Int+CurrencyFormatting.swift in Sources */,
 				047589F5270FF76F0010CD70 /* Date+Formatting.swift in Sources */,
