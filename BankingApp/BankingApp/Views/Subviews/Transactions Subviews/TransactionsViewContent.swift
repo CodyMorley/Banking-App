@@ -19,7 +19,7 @@ struct TransactionsViewContent: View {
     var body: some View {
         VStack {
             List(transactions) { transaction in
-                AccountRow(transaction: transaction)
+                TransactionRow(transaction: transaction)
             }
             AddItemButton(title: "New Transaction", action: newTransaction)
         }

@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct AccountsView: View {
+    @EnvironmentObject private var stateHandler: StateHandler
+    @State private var addingAccount: Bool = false
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            AccountsViewContent(accounts: $stateHandler.accounts,
+                                newAccount: { addingAccount = true })
+        }
+        .sheet(isPresented: $addingAccount) {
+            NavigationView {
+                NewAccountView()
+            }
+            .environmentObject(stateHandler)
+        }
     }
 }
 
 struct AccountsView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountsView()
+        NavigationView {
+            AccountsViewContent(accounts: .constant([TestData.account]), newAccount: {})
+        }
     }
 }

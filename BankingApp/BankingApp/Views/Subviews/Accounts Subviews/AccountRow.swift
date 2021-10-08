@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct AccountRow: View {
-    let transa
+    let account: Account
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 4.0) {
+            HStack {
+                Text(account.name)
+                    .font(.headline)
+                Spacer()
+                Text(account.balance.currencyFormat)
+                    .font(.headline)
+            }
+            Text("\(account.type.rawValue.capitalized) account")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            Text(account.iban.ibanFormat)
+                .font(.caption)
+                .foregroundColor(.secondary)
+        }
+        .padding(.vertical, 8.0)
     }
 }

@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct AccountsViewContent: View {
+    //Properties
+    @Binding var accounts: [Account]
+    let newAccount: () -> Void
+    
+    //Methods
+    func move(fromOffsets source: IndexSet, toOffset destination: Int) {
+        accounts.move(fromOffsets: source, toOffset: destination)
+    }
+    
+    //Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            List {
+                ForEach(accounts) { account in
+                    NavigationLink(destination: TransactionsView(account: account)) {
+                        AccountRow(account: account)
+                    }
+                }
+                .onMove(perform: move(fromOffsets:toOffset:))
+            }
+            AddItemButton(title: "New Account", action: newAccount)
+        }
+        .navigationBarTitle("Accounts")
+        .navigationBarItems(trailing: EditButton())
     }
 }
 
-struct AccountsViewContent_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountsViewContent()
-    }
-}
+

@@ -8,6 +8,7 @@
 import Foundation
 
 extension Date {
+    
     var transactionFormat: String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

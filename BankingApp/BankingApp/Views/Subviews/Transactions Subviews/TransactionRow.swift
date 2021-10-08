@@ -16,17 +16,12 @@ struct TransactionRow: View {
                 Text(transaction.beneficiary)
                     .font(.headline)
                 Spacer()
-                Text(transaction.amount.currencyFormat)//todo
+                Text(transaction.amount.currencyFormat)
                     .font(.headline)
-                    .foregroundColor(.secondary)
             }
-            Text(transaction.date.transactionFormat) //todo
+            Text(transaction.date.transactionFormat)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
         }
-    }
-}
-
-struct TransactionRow_Previews: PreviewProvider {
-    static var previews: some View {
-        TransactionRow()
     }
 }

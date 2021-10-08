@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct TransactionsView: View {
+    //Bindings
+    @EnvironmentObject private var stateHandler: StateHandler
+    @State private var addingTransactions: Bool = false
+    //Properties
+    let account: Account
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TransactionsViewContent(account: account, newTransaction: { addingTransactions = true })
+            .sheet(isPresented: $addingTransactions) {
+                NavigationView {
+                    NewTransactionView(account: account)
+                        .environmentObject(stateHandler)
+                }
+            }
     }
 }
 
 struct TransactionsView_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionsView()
+        Group {
+            NavigationView {
+                TransactionsViewContent(account: TestData.account, newTransaction: {})
+            }
+        }
     }
 }

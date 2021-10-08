@@ -83,10 +83,10 @@
 		047589AA270F760B0010CD70 /* BankingApp */ = {
 			isa = PBXGroup;
 			children = (
-				047589C6270F7FFB0010CD70 /* Helpers */,
 				047589B9270F76150010CD70 /* Models */,
 				047589BB270F76290010CD70 /* Views */,
 				047589BA270F761F0010CD70 /* View Models */,
+				047589C6270F7FFB0010CD70 /* Helpers */,
 				047589AB270F760B0010CD70 /* BankingAppApp.swift */,
 				047589AF270F760C0010CD70 /* Assets.xcassets */,
 				047589B1270F760C0010CD70 /* Preview Content */,
@@ -146,9 +146,11 @@
 		047589E2270FF1B10010CD70 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				047589EB270FF25F0010CD70 /* Shared Subviews */,
 				047589E9270FF23B0010CD70 /* Accounts Subviews */,
+				047589F8270FFAA70010CD70 /* New Accounts Subviews */,
 				047589EA270FF24E0010CD70 /* Transactions Subviews */,
+				047589F9270FFAC00010CD70 /* New Transaction Subviews */,
+				047589EB270FF25F0010CD70 /* Shared Subviews */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -177,6 +179,20 @@
 				047589DA270F8BE50010CD70 /* AddItemButton.swift */,
 			);
 			path = "Shared Subviews";
+			sourceTree = "<group>";
+		};
+		047589F8270FFAA70010CD70 /* New Accounts Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Accounts Subviews";
+			sourceTree = "<group>";
+		};
+		047589F9270FFAC00010CD70 /* New Transaction Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Transaction Subviews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

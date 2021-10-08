@@ -8,6 +8,19 @@
 import Foundation
 
 extension String {
+    
+    var ibanFormat: String {
+        var remaining = Substring(self)
+        var pieces: [Substring] = []
+        
+        while !remaining.isEmpty {
+            pieces.append(remaining.prefix(4))
+            remaining = remaining.dropFirst(4)
+        }
+        
+        return pieces.joined(separator: " ")
+    }
+    
     static func mockIBAN() -> String {
         let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         let numerals = "0123456789"
@@ -20,17 +33,5 @@ extension String {
         + randomized(len: 2, from: numerals)
         + randomized(len: 4, from: letters)
         + randomized(len: 12, from: numerals)
-    }
-    
-    var ibanFormat: String {
-        var remaining = Substring(self)
-        var pieces: [Substring] = []
-        
-        while !remaining.isEmpty {
-            pieces.append(remaining.prefix(4))
-            remaining = remaining.dropFirst(4)
-        }
-        
-        return pieces.joined(separator: " ")
     }
 }
