@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		047589AC270F760B0010CD70 /* BankingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589AB270F760B0010CD70 /* BankingAppApp.swift */; };
-		047589AE270F760B0010CD70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589AD270F760B0010CD70 /* ContentView.swift */; };
 		047589B0270F760C0010CD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047589AF270F760C0010CD70 /* Assets.xcassets */; };
 		047589B3270F760C0010CD70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047589B2270F760C0010CD70 /* Preview Assets.xcassets */; };
 		047589BD270F76740010CD70 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589BC270F76740010CD70 /* Transaction.swift */; };
@@ -16,12 +15,17 @@
 		047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589C0270F7BEB0010CD70 /* PersistenceHandler.swift */; };
 		047589C8270F80160010CD70 /* String+IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589C7270F80160010CD70 /* String+IBAN.swift */; };
 		047589CA270F81800010CD70 /* StateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589C9270F81800010CD70 /* StateHandler.swift */; };
+		047589CC270F846D0010CD70 /* UITestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589CB270F846D0010CD70 /* UITestData.swift */; };
+		047589DB270F8BE50010CD70 /* AddItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589DA270F8BE50010CD70 /* AddItemButton.swift */; };
+		047589E1270FF1AA0010CD70 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E0270FF1AA0010CD70 /* AccountsView.swift */; };
+		047589E4270FF1F20010CD70 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E3270FF1F20010CD70 /* TransactionsView.swift */; };
+		047589E6270FF21E0010CD70 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E5270FF21E0010CD70 /* NewAccountView.swift */; };
+		047589E8270FF2340010CD70 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E7270FF2340010CD70 /* NewTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		047589A8270F760B0010CD70 /* BankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047589AB270F760B0010CD70 /* BankingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingAppApp.swift; sourceTree = "<group>"; };
-		047589AD270F760B0010CD70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		047589AF270F760C0010CD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047589B2270F760C0010CD70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		047589BC270F76740010CD70 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -29,6 +33,12 @@
 		047589C0270F7BEB0010CD70 /* PersistenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHandler.swift; sourceTree = "<group>"; };
 		047589C7270F80160010CD70 /* String+IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IBAN.swift"; sourceTree = "<group>"; };
 		047589C9270F81800010CD70 /* StateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHandler.swift; sourceTree = "<group>"; };
+		047589CB270F846D0010CD70 /* UITestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestData.swift; sourceTree = "<group>"; };
+		047589DA270F8BE50010CD70 /* AddItemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemButton.swift; sourceTree = "<group>"; };
+		047589E0270FF1AA0010CD70 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		047589E3270FF1F20010CD70 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		047589E5270FF21E0010CD70 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
+		047589E7270FF2340010CD70 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,11 @@
 		047589BB270F76290010CD70 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				047589AD270F760B0010CD70 /* ContentView.swift */,
+				047589E0270FF1AA0010CD70 /* AccountsView.swift */,
+				047589E3270FF1F20010CD70 /* TransactionsView.swift */,
+				047589E5270FF21E0010CD70 /* NewAccountView.swift */,
+				047589E7270FF2340010CD70 /* NewTransactionView.swift */,
+				047589E2270FF1B10010CD70 /* Subviews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,8 +124,41 @@
 			isa = PBXGroup;
 			children = (
 				047589C7270F80160010CD70 /* String+IBAN.swift */,
+				047589CB270F846D0010CD70 /* UITestData.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		047589E2270FF1B10010CD70 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				047589EB270FF25F0010CD70 /* Shared Subviews */,
+				047589E9270FF23B0010CD70 /* Accounts Subviews */,
+				047589EA270FF24E0010CD70 /* Transactions Subviews */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		047589E9270FF23B0010CD70 /* Accounts Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Accounts Subviews";
+			sourceTree = "<group>";
+		};
+		047589EA270FF24E0010CD70 /* Transactions Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Transactions Subviews";
+			sourceTree = "<group>";
+		};
+		047589EB270FF25F0010CD70 /* Shared Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				047589DA270F8BE50010CD70 /* AddItemButton.swift */,
+			);
+			path = "Shared Subviews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +231,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047589AE270F760B0010CD70 /* ContentView.swift in Sources */,
+				047589E6270FF21E0010CD70 /* NewAccountView.swift in Sources */,
 				047589BF270F76810010CD70 /* Account.swift in Sources */,
 				047589C8270F80160010CD70 /* String+IBAN.swift in Sources */,
+				047589CC270F846D0010CD70 /* UITestData.swift in Sources */,
 				047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */,
+				047589DB270F8BE50010CD70 /* AddItemButton.swift in Sources */,
+				047589E8270FF2340010CD70 /* NewTransactionView.swift in Sources */,
+				047589E4270FF1F20010CD70 /* TransactionsView.swift in Sources */,
+				047589E1270FF1AA0010CD70 /* AccountsView.swift in Sources */,
 				047589CA270F81800010CD70 /* StateHandler.swift in Sources */,
 				047589AC270F760B0010CD70 /* BankingAppApp.swift in Sources */,
 				047589BD270F76740010CD70 /* Transaction.swift in Sources */,
