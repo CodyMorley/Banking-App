@@ -21,6 +21,12 @@
 		047589E4270FF1F20010CD70 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E3270FF1F20010CD70 /* TransactionsView.swift */; };
 		047589E6270FF21E0010CD70 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E5270FF21E0010CD70 /* NewAccountView.swift */; };
 		047589E8270FF2340010CD70 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589E7270FF2340010CD70 /* NewTransactionView.swift */; };
+		047589ED270FF3640010CD70 /* AccountsViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589EC270FF3640010CD70 /* AccountsViewContent.swift */; };
+		047589EF270FF37B0010CD70 /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589EE270FF37B0010CD70 /* AccountRow.swift */; };
+		047589F1270FF3A50010CD70 /* TransactionsViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F0270FF3A50010CD70 /* TransactionsViewContent.swift */; };
+		047589F3270FF3B40010CD70 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F2270FF3B40010CD70 /* TransactionRow.swift */; };
+		047589F5270FF76F0010CD70 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F4270FF76F0010CD70 /* Date+Formatting.swift */; };
+		047589F7270FF79C0010CD70 /* Int+CurrencyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047589F6270FF79C0010CD70 /* Int+CurrencyFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		047589E3270FF1F20010CD70 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		047589E5270FF21E0010CD70 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
 		047589E7270FF2340010CD70 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
+		047589EC270FF3640010CD70 /* AccountsViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewContent.swift; sourceTree = "<group>"; };
+		047589EE270FF37B0010CD70 /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
+		047589F0270FF3A50010CD70 /* TransactionsViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewContent.swift; sourceTree = "<group>"; };
+		047589F2270FF3B40010CD70 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		047589F4270FF76F0010CD70 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		047589F6270FF79C0010CD70 /* Int+CurrencyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CurrencyFormatting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,8 @@
 			children = (
 				047589C7270F80160010CD70 /* String+IBAN.swift */,
 				047589CB270F846D0010CD70 /* UITestData.swift */,
+				047589F4270FF76F0010CD70 /* Date+Formatting.swift */,
+				047589F6270FF79C0010CD70 /* Int+CurrencyFormatting.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -142,6 +156,8 @@
 		047589E9270FF23B0010CD70 /* Accounts Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				047589EC270FF3640010CD70 /* AccountsViewContent.swift */,
+				047589EE270FF37B0010CD70 /* AccountRow.swift */,
 			);
 			path = "Accounts Subviews";
 			sourceTree = "<group>";
@@ -149,6 +165,8 @@
 		047589EA270FF24E0010CD70 /* Transactions Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				047589F0270FF3A50010CD70 /* TransactionsViewContent.swift */,
+				047589F2270FF3B40010CD70 /* TransactionRow.swift */,
 			);
 			path = "Transactions Subviews";
 			sourceTree = "<group>";
@@ -234,15 +252,21 @@
 				047589E6270FF21E0010CD70 /* NewAccountView.swift in Sources */,
 				047589BF270F76810010CD70 /* Account.swift in Sources */,
 				047589C8270F80160010CD70 /* String+IBAN.swift in Sources */,
+				047589ED270FF3640010CD70 /* AccountsViewContent.swift in Sources */,
 				047589CC270F846D0010CD70 /* UITestData.swift in Sources */,
 				047589C1270F7BEB0010CD70 /* PersistenceHandler.swift in Sources */,
+				047589EF270FF37B0010CD70 /* AccountRow.swift in Sources */,
 				047589DB270F8BE50010CD70 /* AddItemButton.swift in Sources */,
 				047589E8270FF2340010CD70 /* NewTransactionView.swift in Sources */,
 				047589E4270FF1F20010CD70 /* TransactionsView.swift in Sources */,
 				047589E1270FF1AA0010CD70 /* AccountsView.swift in Sources */,
 				047589CA270F81800010CD70 /* StateHandler.swift in Sources */,
 				047589AC270F760B0010CD70 /* BankingAppApp.swift in Sources */,
+				047589F7270FF79C0010CD70 /* Int+CurrencyFormatting.swift in Sources */,
+				047589F5270FF76F0010CD70 /* Date+Formatting.swift in Sources */,
+				047589F3270FF3B40010CD70 /* TransactionRow.swift in Sources */,
 				047589BD270F76740010CD70 /* Transaction.swift in Sources */,
+				047589F1270FF3A50010CD70 /* TransactionsViewContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
